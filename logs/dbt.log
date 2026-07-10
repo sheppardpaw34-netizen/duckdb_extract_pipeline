@@ -1,0 +1,36 @@
+[0m00:15:52.619678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280899D3020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002808A2F9460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280899D0140>]}
+
+
+============================== 00:15:52.674928 | 932b2c00-4f88-4782-9ad4-f3a7913ae63a ==============================
+[0m00:15:52.674928 [info ] [MainThread]: Running with dbt=1.11.12
+[0m00:15:52.676931 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ZED\\.dbt', 'invocation_command': 'dbt init saas_analytics', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:15:52.737426 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ZED\.dbt
+[0m00:15:52.739436 [debug] [MainThread]: Starter project path: C:\Users\ZED\saas_analytics_workspace\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m00:15:52.805950 [info ] [MainThread]: 
+Your new dbt project "saas_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:15:52.805950 [info ] [MainThread]: Setting up your profile.
+[0m00:17:37.111072 [info ] [MainThread]: Profile saas_analytics written to C:\Users\ZED\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m00:17:37.115090 [debug] [MainThread]: Command `dbt init` succeeded at 00:17:37.113081 after 104.89 seconds
+[0m00:17:37.115090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002808A4B4110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002808A1E9D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002808A0F2AE0>]}
+[0m00:17:37.115090 [debug] [MainThread]: Flushing usage events
+[0m00:17:38.858711 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.196"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019f4c4a-c2de-7703-9086-7753602f7bfa","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.196","name":"MainReportVersion","pid":14344,"thread":"tokio-rt-worker","ts":"2026-07-10T13:49:55.871416Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ZED\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019f4c4a-c2de-7703-9086-7753602f7bfa","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":14344,"thread":"tokio-rt-worker","ts":"2026-07-10T13:49:55.872071Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019f4c4a-c2de-7703-9086-7753602f7bfa","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":14344,"thread":"tokio-rt-worker","ts":"2026-07-10T13:49:55.962650Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019f4c4a-c2de-7703-9086-7753602f7bfa","level":"debug","msg":"License loaded from file C:\\Users\\ZED\\.dbt\\license.trial","name":"Generic","pid":14344,"thread":"tokio-rt-worker","ts":"2026-07-10T13:49:58.142127Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-07-10T13:23:49+00:00\",\n  \"expires_at\": \"2026-07-23T11:08:03+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"3b7ebaf633b490903dd485bc7a0a09afb7bed5a858c978a239fd9a4231a1defb\",\n  \"days_remaining\": 12,\n  \"trial_start_date\": \"2026-07-09T11:08:03+00:00\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019f4c4a-c2de-7703-9086-7753602f7bfa","level":"info","msg":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-07-10T13:23:49+00:00\",\n  \"expires_at\": \"2026-07-23T11:08:03+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"3b7ebaf633b490903dd485bc7a0a09afb7bed5a858c978a239fd9a4231a1defb\",\n  \"days_remaining\": 12,\n  \"trial_start_date\": \"2026-07-09T11:08:03+00:00\"\n}","name":"ShowNode","pid":14344,"thread":"tokio-rt-worker","ts":"2026-07-10T13:49:58.630296Z"}}
+{"data":{"completed_at":"2026-07-10T13:49:58.854451Z","elapsed":2.9877266883850098,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019f4c4a-c2de-7703-9086-7753602f7bfa","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [3.0s]","name":"CommandCompleted","pid":14344,"thread":"tokio-rt-worker","ts":"2026-07-10T13:49:58.859212Z"}}
