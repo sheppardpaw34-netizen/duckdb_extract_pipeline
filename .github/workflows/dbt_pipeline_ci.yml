@@ -25,8 +25,12 @@ jobs:
         pip install dbt-core dbt-duckdb
 
     - name: Download dbt Dependencies
-      run: dbt deps || echo "No packages configured"
+      run: |
+        cd saas_analytics
+        dbt deps || echo "No packages configured"
 
     - name: Compile and Run dbt Assertions
       run: |
-        dbt compile
+        cd saas_analytics
+        dbt compile --profiles-dir .
+        dbt run --select stg_subscription_events+ --profiles-dir .
