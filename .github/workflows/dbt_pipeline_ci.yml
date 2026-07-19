@@ -22,7 +22,12 @@ jobs:
     - name: Install dbt Core and DuckDB Adapter
       run: |
         python -m pip install --upgrade pip
-        pip install dbt-core dbt-duckdb
+        pip install dbt-core dbt-duckdb duckdb
+
+    - name: Run Python Ingestion Scrapers
+      run: |
+        python scraper_py/scraper.py
+        python scraper_py/generate_fact.py
 
     - name: Download dbt Dependencies
       run: |
