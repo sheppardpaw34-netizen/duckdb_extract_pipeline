@@ -25,8 +25,9 @@ jobs:
         pip install dbt-core dbt-duckdb duckdb requests beautifulsoup4
     - name: Run Python Ingestion Scrapers
       run: |
-        python scraper_py/scraper.py
-        python scraper_py/generate_fact.py
+        cd saas_analytics
+        python ../scraper_py/scraper.py
+        python ../scraper_py/generate_fact.py
 
     - name: Download dbt Dependencies
       run: |
