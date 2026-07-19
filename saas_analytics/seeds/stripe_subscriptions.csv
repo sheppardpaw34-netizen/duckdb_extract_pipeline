@@ -1,5 +1,0 @@
-subscription_id,customer_id,plan_id,status,start_date,ends_at
-sub_101,cus_001,plan_basic,active,2026-01-01,
-sub_102,cus_002,plan_premium,active,2026-01-15,
-sub_103,cus_003,plan_enterprise,canceled,2026-02-01,2026-06-01
-sub_104,cus_004,plan_premium,active,2026-03-10,

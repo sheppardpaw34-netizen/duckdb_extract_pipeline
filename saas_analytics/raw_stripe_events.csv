@@ -1,6 +1,0 @@
-event_id,customer_id,subscription_id,mrr_impact,event_timestamp
-evt_101,cus_A891,sub_001,150.0,2026-07-01 10:00:00
-evt_101,cus_A891,sub_001,150.0,2026-07-01 10:00:00
-evt_102,,sub_002,49.0,02/07/2026 11:15:00
-evt_103,cus_C112,sub_003,300.0,2026-07-03T14:20:00Z
-evt_104,cus_D441,sub_004,-50.0,2026-07-04 09:00:00
