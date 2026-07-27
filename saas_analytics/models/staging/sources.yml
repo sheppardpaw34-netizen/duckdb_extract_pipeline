@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: saas_warehouse
+    schema: main
+    tables:
+      - name: raw_stripe_customers
+      - name: raw_stripe_subscriptions
+      - name: raw_stripe_invoices
+      
