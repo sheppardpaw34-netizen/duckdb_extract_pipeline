@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: mrt_mrr_waterfall
+    description: >
+      Executive-level Monthly Recurring Revenue (MRR) waterfall ledger. Reconciles 
+      beginning-of-month MRR to end-of-month MRR across key SaaS movement buckets 
+      (New, Expansion, Contraction, Churn) to audit top-line growth.
+    config:
+      meta:
+        domain: finance
+        owner: analytics_engineering
+        data_sensitivity: internal
+        update_frequency: monthly
+
+    columns:
+      - name: month_end_date
+        description: "Primary Key. Strict calendar month-end snapshot date."
+        tests:
+          - not_null
+          - unique
+
+      - name: beginning_mrr
+        description: "Total company MRR at the start of the reporting month."
+        tests:
+          - not_null
+
+      - name: new_mrr
+        description: "Recurring revenue generated from newly acquired paid accounts."
+        tests:
+          - not_null
+
+      - name: expansion_mrr
+        description: "Additional recurring revenue generated from active account upgrades or seat add-ons."
+        tests:
+          - not_null
+
+      - name: contraction_mrr
+        description: "Lost recurring revenue from active account downgrades (expressed as a negative dollar amount)."
+        tests:
+          - not_null
+
+      - name: churn_mrr
+        description: "Total recurring revenue lost due to complete account cancellations (expressed as a negative dollar amount)."
+        tests:
+          - not_null
+
+      - name: ending_mrr
+        description: "Total company MRR active at the end of the reporting month."
+        tests:
+          - not_null
+
+      - name: net_new_mrr
+        description: "Net dollar expansion/contraction calculated as Ending MRR minus Beginning MRR."
+        tests:
+          - not_null
