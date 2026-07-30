@@ -1,0 +1,4 @@
+customer_id,email,created_at
+cust_101,alex@saas.com,2026-01-10 08:00:00
+cust_102,sarah@saas.com,2026-02-15 10:30:00
+,invalid_null_id@saas.com,2026-03-01 12:00:00
