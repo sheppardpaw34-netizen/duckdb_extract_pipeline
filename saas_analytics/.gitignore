@@ -1,0 +1,9 @@
+
+target/
+dbt_packages/
+logs/
+dbt_internal_packages/
+*.duckdb"node_modules/" 
+".venv/" 
+"dbt-env/" 
+".user.yml" 

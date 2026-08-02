@@ -1,0 +1,1 @@
+select * FROM main.fct_subscriptions

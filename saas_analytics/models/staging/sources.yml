@@ -1,11 +1,7 @@
 version: 2
 
 sources:
-  - name: stripe
-    database: saas_warehouse
-    schema: main
+  - name: main
+    description: "Raw subscription ingest data from local production scrapers."
     tables:
-      - name: raw_stripe_customers
-      - name: raw_stripe_subscriptions
-      - name: raw_stripe_invoices
-      
+      - name: fact_subscription_events
