@@ -12,4 +12,6 @@ Thumbs.db
 logs/
 target/
 dbt_modules/
-dbt_packages/
+dbt_packages/saas_analytics/evidence-app/node_modules/ 
+**/node_modules/ 
+**/.venv/ 
