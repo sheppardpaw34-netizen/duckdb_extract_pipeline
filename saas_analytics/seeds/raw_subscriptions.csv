@@ -1,5 +1,0 @@
-subscription_id,customer_id,status,mrr_amount,created_at,canceled_at
-sub_001,cust_101,active,150.00,2026-01-10 08:00:00,
-sub_002,cust_102,super_active,299.00,2026-02-15 10:30:00,
-sub_003,cust_999,active,99.00,2026-03-01 12:00:00,
-sub_004,cust_101,canceled,50.00,2026-04-01 12:00:00,2026-01-01 00:00:00

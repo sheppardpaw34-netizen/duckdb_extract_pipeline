@@ -1,7 +1,0 @@
-saas_analytics_profile:
-  target: dev
-  outputs:
-    dev:
-      type: duckdb
-      path: saas_warehouse.duckdb
-      schema: main

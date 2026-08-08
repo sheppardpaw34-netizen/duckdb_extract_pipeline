@@ -1,4 +1,0 @@
-name: saas_analytics
-type: duckdb
-options:
-  filename: "../../../saas_warehouse.duckdb"

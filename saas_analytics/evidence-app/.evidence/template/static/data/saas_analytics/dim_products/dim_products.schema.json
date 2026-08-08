@@ -1,1 +1,0 @@
-[{"name":"product_id","evidenceType":"number","typeFidelity":"precise"},{"name":"plan_name","evidenceType":"string","typeFidelity":"precise"},{"name":"billing_cycle","evidenceType":"string","typeFidelity":"precise"},{"name":"price","evidenceType":"number","typeFidelity":"precise"}]
